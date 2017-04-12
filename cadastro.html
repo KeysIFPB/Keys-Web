@@ -2,7 +2,7 @@
 
 <html ng-app="KEYS">
 	<head>
-		<title> CADASTRO </title>
+		<title> ADM </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -49,59 +49,57 @@
 				</nav>
             </header>
 
-            <!-- Menu -->
-            <nav id="menu">
+            <!-- Menu --> <nav id="menu">
                 <div class="inner">
                     <h2>Menu</h2>
                     <ul class="links">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="detalhes.html">Detalhes</a></li>
-						<!--	<li><a href="#">Login</a></li> -->
-                        <li><a href="#">Cadastrar</a></li>
+				        <!--	<li><a href="#">Login</a></li> -->
+                    	<li><a href="adm.html">Entrar como administrador</a></li>
+						<li><a href="adm.html">Chaves</a></li>
                     </ul>
-                    <a href="#" class="fechar">Fechar</a>
+                    <a href="#" class="close">Fechar</a>
                 </div>
             </nav>
             
-            <!-- Wrapper -->
-            <section id="wrapper">
+            
+            <!-- Wrapper -->  
+			<section id="wrapper">
                 <header>
                     <div class="inner">
-                        <h2>CADASTRO</h2>
-                        <p>Cadastre-se para começar o trabalho.</p>
+                        <h2>Administrador</h2>
+                        <p>efetue o login para começar o trabalho.</p>
                     </div>
                 </header>
             </section>               
                 
             <section>
-                <form method="post" action="#">
+                <form method="post" action="index.html#!/detalhes" name="formz">
                     <div class="row uniform">
                         <div class="6u 12u$(xsmall)">
                             <label for="demo-name">Nome</label>
-                            <input type="text" ng-model="adm.nome" name="demo-name" id="demo-name" value="" />
+                            <input type="text" ng-model="adm.name" name="demo-name" id="demo-name"/>
+                            
                         </div>
                         <div class="6u$ 12u$(xsmall)">
-                            <label for="demo-email">Email</label>
-                            <input type="email" ng-model="adm.email" name="demo-email" id="demo-email" value="" />
+                            <label for="demo-password">Senha</label>
+                            <input type="password" ng-model="adm.password" name="demo-password" id="demo-password"/>
+                           
                         </div>
-                        <div class="6u$ 12u$(xsmall)">
-                            <label>Número de Identificação</label>
-                            <input type="text" ng-model="adm.id" name="id" id="id" value="" />
-                        </div>
-                        <div class="6u$ 12u$(xsmall)">
-                            <label>Senha</label>
-                            <input type="password" ng-model="adm.senha" name="senha" id="senha" value="" />
-                        </div>
-                        <div class="12u$">
+                        
+                        
+                        <div align ="center" class="12u$">
                             <ul class="actions">
-                                <li><input type="submit" value="Cadastrar" ng-click="adicionaAdm()" class="special" /></li>
+                                
+                                <li><input type="submit" value="Login" ng-click="validar()" class="special" /></li>
                                 <li><input type="reset" value="Limpar" /></li>
                             </ul>
                         </div>
                     </div>
                 </form>
             </section>
-            
+		
             <!-- Footer -->
                 <section id="footer">
                     <div class="inner">
@@ -114,3 +112,4 @@
         </div>
 	</body>
 </html>
+          

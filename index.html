@@ -6,28 +6,48 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         
         
         <!-- Angular -->
-        <script src="js/lib/angular.min.js"></script>
-        <script src="js/lib/angular-route.min.js"></script>
-        <script src="js/lib/angular-sanitize.min.js"></script>        
+      <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-aria.min.js"></script>       
         
-        <!-- JQuery -->
+		  <!-- Angular Material -->
+        <script src="js/lib/angular-material.min.js"></script>
+        <link rel="stylesheet" href="css/angular-material.min.css">
+ 
+          <!-- JQuery -->
         <script src="js/lib/jquery.min.js"></script>
+ 
+          <!-- Bootstrap -->
+        <script src="js/lib/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    
+          <!-- Tether - Dependência obrigatória do Bootstrap -->
+        <script src="js/lib/tether.min.js"></script>
+        <link rel="stylesheet" href="css/tether.min.css">    
+       
 
         <!-- App -->
         <script src="js/app.js"></script>
         <script src="js/router/router.js"></script>
+		<script src="js/router/state.js"></script>
         
         <!-- Controller -->
         <script src="js/controller/KEYSController.js"></script>
 
         <!-- Service -->
         <script src="js/service/KEYSService.js"></script>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
         
 	</head>
 	<body>
@@ -50,7 +70,8 @@
                         <li><a href="index.html">Início</a></li>
                         <li><a href="detalhes.html">Detalhes</a></li>
 				        <!--	<li><a href="#">Login</a></li> -->
-                        <li><a href="cadastro.html">Cadastrar</a></li>
+                        <li><a href="adm.html">Entrar como administrador</a></li>
+						<li><a href="chaves.html">Chaves</a></li>
                     </ul>
                     <a href="#" class="close">Fechar</a>
                 </div>
